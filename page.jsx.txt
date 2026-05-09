@@ -1,0 +1,141 @@
+// FILE NAME: app/page.jsx
+// Upload this file inside your Next.js project.
+// Then upload the whole project to GitHub.
+// Required: Next.js + Tailwind CSS
+
+export default function AdultLandingPage() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Header */}
+      <header className="flex items-center justify-between px-8 py-5 border-b border-gray-800">
+        <h1 className="text-3xl font-bold text-pink-500">NightFlix</h1>
+        <nav className="flex gap-6 text-sm text-gray-300">
+          <a href="#home" className="hover:text-pink-400">Home</a>
+          <a href="#videos" className="hover:text-pink-400">Videos</a>
+          <a href="#premium" className="hover:text-pink-400">Premium</a>
+          <a href="#contact" className="hover:text-pink-400">Contact</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="relative flex flex-col items-center justify-center text-center px-6 py-28 bg-gradient-to-b from-gray-900 to-black"
+      >
+        <h2 className="text-5xl md:text-6xl font-extrabold leading-tight max-w-4xl">
+          Unlimited <span className="text-pink-500">Premium</span> Entertainment
+        </h2>
+
+        <p className="mt-6 text-lg text-gray-300 max-w-2xl">
+          Bangla + English mixed premium entertainment platform. HD streaming,
+          private access, secure payment & VIP membership available.
+        </p>
+
+        <div className="mt-8 flex gap-4 flex-wrap justify-center">
+          <button className="bg-pink-600 hover:bg-pink-700 transition px-8 py-3 rounded-2xl font-semibold shadow-lg">
+            Watch Now
+          </button>
+
+          <button className="border border-pink-500 hover:bg-pink-500 transition px-8 py-3 rounded-2xl font-semibold">
+            Premium Join
+          </button>
+        </div>
+
+        <div className="mt-10 flex flex-col items-center">
+          <a
+            href="https://xhamster.com/videos/fucking-huge-tit-mia-khalifa-10134593"
+            className="inline-block"
+            style={{ pointerEvents: 'auto' }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <img
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAQEBAVFRAVFRUVFRUVFRAVFRcVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4wFx8zODMtNygtLisBCgoKDg0OGBAQFy0dHSUtLS0rLysrKystKy0tLS0tLS0tLS0tLS0tKy0tKy4tKy0tLS0tLSsrKy0tLi0tLS0tLf/AABEIAQwAvAMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAABAAIDBAUGBwj/xABFEAABBAEBBAcFBAgFAQkAAAABAAIDEQQhBRIxQQYHE1FhcZEiMoGhsRQjwfBCUnKCkqKy0SQzYsLhFSVDU2ODk6Oz8f/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMEBf/EACMRAQEAAgIDAAICAwAAAAAAAAABAhEDEiExQQRRMoETQqH/2gAMAwEAAhEDEQA/AN7pGk6kaUQ2kaTqRAQMpKk+kqQR7qcAnUiAgaAsR0l6S42DGH5D/aN7kbaMjyP1R3eJ0Ct7e2rHiY8uTL7rG3XNzuDWDxJoLzltza02XO/ImdcjzoBdNb+ixg5Af8orcNrdbOa9x+zxxws5WO0f8Sab8N1QHrW2j2O7UXaE6S7mu6BqNy927rX5LU49kZDhYid6LJzdGpuyaC2nizV3p3FS5yfW5x5X43Poj1rOdIItoBoa7QTMFbp/8xt8PEcO7mutMIIDmkEEAgjUEHUEHuXlKSJzXFrhThxC6n1RdLnB7dnTutjr+zuPFrhZMV/qkWR3HTmK0xp1ukKUlIEKIjpKk8hCkDKTd1SUlSoj3UN1SUlSCPdQ3VJSVIBSSKNKKFI0iAiAiBSVJ1JUgbSICICKDkHXbtkl8GG0+y0drIPE6NB+a0HYsAc8vcQANBegvn+CsdOdo/aNoZUgPs9oWt/ZZ7I+hUOFs4v7GMFjS+7fK4tY3zUy9adMPe287IDH01srC7uDm2ru0cVsQJllYzS9Xa15ei1CHY0uLLGXvieSQbhk3wOB1NVzWQ6YSGWQezZDRwJpeW4SZa29s5MrjvTA7dbE54eyRrrBBo66Cx9FiWzOY5kjDuvY5rmnmHNNtPqFm9r7Dkx42vE+PK1wbbYi4vaTdggtHA8x4LXZTqV6sZqaePO7u3qTYG025WLBks4Ssa6u53Bzfg4EfBXiFzfqL2rv4k+K4+1DJvN/Yls0PJ7XfxBdLIVckRCFKQhNIQMSRpJAKQpOSpAwoJ5TSgSNJIgIEAjSICNIBSVJ1JUigAtH60elww4Owid/i5mndrjGzgZD3HiG+Nnkt2yZQxjnng0En4C1wDpTvSwtzpdZspzn2f0YwHGJje4Bu58TzQadE0FwHeR/yum7HwGOa1xrQLmeLGXPG7y1+A1K6RsOQ7jddKC8/wCR6j2fi+7td2pG0N5ADVxJAoDibKhnZG3JqM7w3W71kaF3DTuPD0T9p5EdsDgSTo1ouzfIAcVXmyIw9lwvi103mvY0uvxABIXDHenqutsxkbMjfH7oBXKNs4nZTSM5B2nkdQuoZW0CW+K5x0jNzWeY+i6cFu3H8mTq2TqXzez2mIyaE0b2eZHtt/pPou/ry30ZzDBl48vDclYb8N4B3yJXqQa6jgvW+fQITCFKU0hVERCFJ5CFIAlSNI0gjKFJ5CFIGpwSRCiiAjSQCdSAUlSdSSDAdO3kbNza49hJ/Sfz8Vx7p7I1jMWDXeia8EcqBDL+O4PVdx25gCfGngP/AHkbmX3WCvN/S/KfLlTufxa8xkcrYS11eZBKl9rGFZM5pDmmiPx4reOi+0WviaCfaGh/utGDFktgxuLn7ppwoj5rPJjLi68OdxydE/6aJHiVpIkA0Nn0pLP2TK9tTu9njQLtfUlYPB27PEadHvEcwnZvS6Vwrsj6ry9c/j2/5MdeV7LlaxgF6AVx5DxWibRyO1mJHAaK7mTzzBzn6Rj80sdjR8/j81348ery83J21PhuQKr4r0x0I2mMnZ+NNeu4Gu/aZ7J+nzXmfKdbvILr3UXta2ZGI48CJWfGmvA9Gn1XVwrqxQKcgQqyYQmp6CIACVJwCVKqYQmkKUhNIREScEAnBRTgikEUCSSKjdJXL6oKm3c3scaeUHVkb3jza0kfMBeXJpL942bLieZJOpK7v1pbQMez5a9ntKjs6k73Ead4BHxXApGkAOI0ddeNc1Pq/DC7is10VlDZ/aNAtr5rBgKRriDYJB7xoVcpuaXHLrZXWo8Fpe11CnD4KLbOLAxlu3G+LiB9VzJ20JuHbSV+2/8Auq7iSbJs951PqvPPx7v29N/JnyNp27tPHMYhhdvHmWg7vrz+CwTX1vHuP0H/ACq0HM9wRkdp5k/VdccJj4ccs7ld1JEy9TztZzoVtk4eXFkfotdUg72O0d8tfgsF2lkAcA2vlqnx9/fofArTD1fBK17WvYQWuAcCOBBFghSFcw6mOk5kY7Ald7cYLoSeJZ+kz4cR4HwXUaVZRkJqkITSEARSSVApCk9BQQBPCaE8ICEkkVQ0lan0u6fYuCezdck9f5TD7QHe88GfHXwWQ6cbd+xYE+QP8wAMiGn+Y87rdOYF7x8GledMVu+XOe4ue4lznOJLnOJskk8STzUqybZ3pf02n2iY2yRMZCx28Iw5zi48PbfoSPAALXcuR8pBdugNFNa0U0DwClmhAcPimOFKba0riI8NEwwFWGnW0+SXhQs3oE2aijup7I7tXY4gRqdTrfDVPdigjxHAp2OqrDERfiFC9nD5KzEeX6Q4hACjaGlVoIVmPTj7pH0/sntYCfNKNtHcPmD3H86fFNml3ZO0JMaeLJiP3kTgfBwB4HwIsfFekujW3oM7HZkQO0I9ppreY7mxw5EfNeYgdPh+fQrLdCOls2zsjfaLgealZxtv6zf9Q4//AKkSvTdIEKnsPakeVBHkQuDo3iwQb8CPMcK5GwrxWmURSTiEKUARSSVEACeEAiFAUUkkHI+vvaB3cLGHukvmd5tpjPk6Rctw31a33r3cft+ML0+zAgcwe1ls/Gh6Ln0XuFK1isTv90+P4FQOdaiL9AnudyH581NLsC6vNPhbzPFJsakDUXSwyO9VIYXKGGSirxcaWK3GPngPvD3vqO4pkbwR48wrEsiqytB14HvC1Gac4dyiyDZHkhvkcfVCV/DvVTZz5b15nj58EWtsBQg0fhYUwOunDj66ojcOq7pc/BymwSv/AMHO4NeCdI3nRso7taDvDXkF6GXkeUArtfU/01E8Tdn5L/8AExioi7jLEBe7fN7AOHEtAOtFWM2OmEIEJyRVRGknEIKIhCKSSqiEUEgoOAdc8pO1Xgn3Yomjw9nfr1efVabwYPFbZ1wMra0/iIj/APDGP9q1OQey3zStRBdK1ExVGcyslgAOHipVx9nsiT+yV2KBPkgoLG3XqxMjFfcB2LTZ3jd8KrSq8bv0CrzhWD/lN+CUin2aRhV+KG6U5xdFNr1YKSFVJG1/ZZvIipYjM005rcrllNIx7tjkfkU4O/t/b8VCCix/LkVpjadPglfG9ksbi2RhDmOboWuBsEKBr1Ix1mlGnpXoF0rj2jiiQUJ2U2eP9V9e8B+o6iR8RyK2ReXOi+35tn5TMmLWvZkZZAkjPvMP1B5EAr0nsHbUGZAzIxn70btO5zXDix45OHd8eBBVYrIFNTkFRAkkkgcEkkiVBwHrqaBtUnvgiJ/mH4BabJ7o8D+C3Trrb/2oPGCI/wAzx+C0kuStRVClglLTbeKj70Qqy2PZ+Y1/g7uVvJdpqtUaa1HFWm7QfVO9ofNc7h+nbHk/axkvs0OauyD7uvzosTHNrfPkrX2kEW419EsJkyODIKCzLXN3VqUWUGki/FPl2u6qZ6lZuG2u8kWttZDW6DVx5fiVrziTqeKyWydj5eZI9uNC+aQN33BoshtgWfiQoNpbLyMdxZkQSROHJ7HN+q6yaccrcmZ6ttjty9p4sUjN+IOMkgNFpbGC6nA8Wlwa0j/UvQ+1ujGDlNLcjFifpQduNa9o/wBL205vwK5f1A7JJfl5hGgAgYfEkSSegEf8S7Mqy8y9YfRb/p2aYGFzoXtbJE52rt02C1xAAJDgR5V3rW430bK7v16YEb9nMncD2sUrQxwF6SaPa48m6A33tA5rgjW2gmfNfJb71MdIxjZpx5HVDkgMHc2YH7snuu3M83N7lorBSULXl7REHGQkbgaCXF1+zugak33KLXrlJRYsxfGx7mFjnNa4sdW8wuAJY6tLF0fJSqorpIIoElaRTSVBwjrqeDtQAcoIgf4pD9CFpBZoti6ysjtNr5hu917GDw3I2NI9QVgpW/RK1IjhwHuhmnaLZE6Jr/Dtd/dPlbK/eCge2iQt36sNmHLG08M+5NjD2uTZWSNMJI8y4/ulaXKHB5DhTgSHA8nA04eqqI9e5Sx47j4KdkVq5FFSzcmpipjB8fkrmymuhmilEsjCxwdvMax7h30x5DX6aFrjRBIOhU4Yp2xUaI1GhWezfSOlzR7KdjRVDBPjSvJkjicY+ymIBD4mPPaYxcGm4j7GgFlaVtXohjzSPGGXQSAn7qbS267p0JrlwJCxklVYNOHAjQq7jdJ3PDYZo9+QH7t4veGh0FC/w/Dll394u+E45NZRU2Rsba+FkNnxgWSsdu217acCRbXNv2mHTSvotp6YZ2ZLBLNmwjeLAy2lpYLsMFaHVzu7msbNtR8XtzTTRtP6zQda4ChxWt7d6VS5DWxEkRNdYvi4iw0uF6cTpr8knfOzfos4+OXXv+lro/0zz8FjWY8/3TSfunsY5ntGzy3hqeIIXR8Prkxvsj5JoXNzGgBsLd4skcebZKpjeZDtRy3lxZ8xcnFgLSvQ8mmwdK+nmbtAua95jxyG/cMPsHd1txq3a66+HctaboljwPe9scTHPkOjWsa5zneTRqVveF1RbUka1zjBFvCy18j95t8nBjCL8LRGhueu79V3QNmJHHm5DbzJG20HhAxw0AH/AIhadTyuhzuv0V6o4YJGTZc/buYQ4RtbuR7zTYLySS8XRrQaa2NF0xE2SKSSorhJBJQEpqJKimfTXO7gT6C0HmbbGR2mfly8Q+eZw8jI6vlSqZDz3I7Mbdk+fxKZmnUhT66T+LsHUhs8Mw5sgj2ppS0HvZEAB/M6Rct6Vhg2jm9ne59olq+/fO9XhvXXhS7J1azCHYcEr9AxmRIfISyuv0C4UHknffqXElx524kk+qrETwygCjxVuFxURiGhCtYy512kTxNvinzSWSTxJJ9dUTwVeR1rLaPdc9wYxpc5xoAAkkngAFl5s+LBEbMXs35ZYDPLYk7N5q42vad13iGmhQ1JusO+MHjwVWaPuWtS+Kz2s8xWz55J3ulleXuPFxr5AaBb/wBSOycaaXNM8bZC2KNrWvDXN3XudvndI42xmvKz3rRHM9iltPVJtLsNqRsJ9idroXa8yN9h895gH7y3HHL9ugdIuqXCnG9iE4snOt6SN3mxzraf2SB4Fa7F1Kz71OzowzvEbyf4S4D5rsYKcFWWE6J9FMXZ8W5A23n35XUZHnxdybpo0aDzsnPIJICiEEkBSSCSorJWggoESoM//Kl/Yf8A0lTWmSNsFveCPVB5h2R7qiz+Kl2UCLB0I0PmNE3aTaKz9df9XW4soM6Lb18cUx/GSQxV6upcmgj08xS3vaGY2PotiRjUyybn8M8krvQx18QtMxnDdCtZwiCO2kMPA+6fwV6IUosmMObXPke48kcKUObqPaGhGvFYrpPF0tF2iaBzQm0F1Z4JsBviOHxCjQSKDdVqVVwVUqHIoAlVIZnROjmaakY4SN4+8xwc35hWnntH1+g35lVsrgFqOeT1RjTB7GPb7rmhw8nCx9VMFqXVfn9tsrEJ95jTCf8A0nFjf5Q1bYFpzPCKaCjaoKSCSByVpoKKCumlOpAhAwlC0SmkKDzltHGMWfmREUWzy+heS0/EEH4rH7UOq3XrSwBHtQSgaTxMcf22XG6v3Wx+q0nagoFZ+us/im2hlyHGwYHH2GiaVg8JZXN+sTj5OTIHaCk7bxrJMd6Qtjg8jFG1j/5w8/FCMaK1nBJvKF79x4eOB0d/dPtB/cVlusjG8EI7wCw0cpYaPu8vBZLBELnffSlrB+ro4+R3XeHJS4tTM2aVUsiahQ948PBZrJi2dFE8nKknnLCYuzj3I2uo7olD9bsa0dO5w1WvxtJO8RqrIxatxDdbQ7lSmHBXHXXn4g/Tgq0rRQ/Pdy9f+FYldV6iM+48zGPBr2St/fBa7+hvqurArgfU1ndntRrCdJopI/C21IPlG71Xe6WnM+0QUwBOVDrQQRQEFG01FBGmkJ6BCCMhNIUhCaQg5j1zYumDP3PkjP77WuH/ANZ9VyvaTuPJdL67NtM/w+G03I1/bvFaAbrmM17zvONLlGROXcfxWdeWpfGjonF73OeS5ziS4nUkk2SfGyp3vczxb8x5qDBGqyZb3pb5axnhROUD3hPbK08/wUORj1q3h3f2VZNRLbGTLAeNKs9u4dfd5KslauktWWgHU6dw/EoyTgnj+R5KonMYSaCaNrv2toFAElMLSdXeimgxgBfE9/8AZKZqz4a1fqbo1nfZ8/EmugyaMu/YLg1/8pK9Phq8lzhepujeb2+Hiz85IY3n9osG987WmKyICVJwCNKoYijSVIAjSSKIjQRSRTSE2k+kCEHFeurYMrcgZwAMD2sY42LbIAQAWnUgtAqr4G6XMyw1daei7B14YOW9sEjGXhxAl7g4aSPc1gLmnUiqAIv3ncOfKsfF3tXHy/NqWrJtFgGnLKOKxAG6/wAllN7RZydMfSOQKrLED5q05ROSFUSK0QU+7bgPFF0TdfAj5lbc6iijJ8lehjAUMIVqNZtbxiw0KLJapmFRZR0WG76YuVd+6mc7tdlRsvWGSSI+V9o35SAfBcAkK6/1A5Vx58P6r4ZB++17T/Q31XSONdbSSCNKsgkjSSAUjSKSCGkE+k2kUEkaRpBrvTrAZPgTxPLg07hO6QCd2RhAsg6EgLnTOimDG+MOY51g+9JLQrvojTiuqdI4XPxpAwWRuurvDHBxA8aC5J0zzSJMVwc4M3mvcGn9FtXpYB8ivPy9u0kuns/HmPS5Wbar07wYocoNgYGRltgAUO5YyCSwtk6exsf2UzCTQ3XE9x4UOWvnxWpwO1pb47vGbc+WdeS6WZConORkKhcVtztSYgt99wKU7fn+GqfhDQlGY0PO/wCkrTFNOjiPH6qRjlFk+8D4IMcs1qVea5QZT0g5QzFSNWqzl0DqOztzaT4idJoHiu9zC14P8If6rnz1sHV1l9ltXBeeBmDP/dBi/wB61HOvToRQCcqgUkikgCKSSBlIUnoIG0gQnJFAwrlfTTZdOfExlljraNBcTxdDvABLfNq6qVxzrxzpYsvBdG8tc2KQivF4uxzGgWM8Ozrw8vS+fVXcPZeJk7Byo2gOyoHRlzwPvdzfbVg8K9oEDS2XzXJMzH7KV0ZNlp40RyvUHgtt2nnyfYosxjjFO/da4xEsDm7wJa4A+02wDRsWAsFtXpTJlxMilx8cOYbEzI3Ml1PtAkO3SD3FvlSzhut82pf+/wBMc4qElSOURXRxq9jimj1UWYdB5/gp28Aq2by+KrKTIFjyoqGMqwf9qqxqVYntRvKJTCo2iepcScxSRyt96NzJB5tdvD5hRPTq/pCsYr11E8OAcOBAI8jqE9YXoZK5+zsB7jbjjQWe89m3VZoKskkikigikkiP/9k="
+            alt="Featured Model"
+            className="w-72 h-72 object-cover rounded-3xl border-4 border-pink-500 shadow-2xl hover:scale-105 transition duration-300 cursor-pointer"
+          />
+          </a>
+          <p className="mt-4 text-gray-400 text-sm">
+            Featured celebrity-style preview section
+          </p>
+
+          <div className="mt-6 text-sm text-gray-500">
+            🔞 18+ Adults Only
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="grid md:grid-cols-3 gap-6 px-8 py-16 bg-gray-950">
+        <div className="bg-gray-900 p-6 rounded-3xl border border-gray-800 shadow-lg">
+          <h3 className="text-2xl font-bold text-pink-400">HD Streaming</h3>
+          <p className="mt-3 text-gray-300">
+            Ultra HD smooth streaming with fast loading server.
+          </p>
+        </div>
+
+        <div className="bg-gray-900 p-6 rounded-3xl border border-gray-800 shadow-lg">
+          <h3 className="text-2xl font-bold text-pink-400">Secure Access</h3>
+          <p className="mt-3 text-gray-300">
+            Login system with private account protection.
+          </p>
+        </div>
+
+        <div className="bg-gray-900 p-6 rounded-3xl border border-gray-800 shadow-lg">
+          <h3 className="text-2xl font-bold text-pink-400">VIP Membership</h3>
+          <p className="mt-3 text-gray-300">
+            Premium users get unlimited access & exclusive content.
+          </p>
+        </div>
+      </section>
+
+      {/* Preview Cards */}
+      <section id="videos" className="px-8 py-16">
+        <h2 className="text-4xl font-bold mb-10 text-center">
+          Trending Content
+        </h2>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[1, 2, 3, 4].map((item) => (
+            <div
+              key={item}
+              className="bg-gray-900 rounded-3xl overflow-hidden border border-gray-800 hover:scale-105 transition"
+            >
+              <div className="h-56 bg-gradient-to-br from-pink-600 to-purple-700"></div>
+              <div className="p-4">
+                <h3 className="font-bold text-lg">Premium Video {item}</h3>
+                <p className="text-sm text-gray-400 mt-2">
+                  Exclusive members-only entertainment.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section
+        id="premium"
+        className="mx-8 my-16 bg-gradient-to-r from-pink-700 to-purple-700 rounded-3xl p-12 text-center shadow-2xl"
+      >
+        <h2 className="text-5xl font-bold">Become A VIP Member</h2>
+        <p className="mt-5 text-lg text-gray-100">
+          Unlock exclusive premium videos and private streaming access.
+        </p>
+
+        <button className="mt-8 bg-black hover:bg-gray-900 px-10 py-4 rounded-2xl text-lg font-semibold border border-white">
+          Upgrade Now
+        </button>
+      </section>
+
+      {/* Footer */}
+      <footer
+        id="contact"
+        className="border-t border-gray-800 py-8 text-center text-gray-500"
+      >
+        <p>© 2026 NightFlix. All Rights Reserved.</p>
+        <p className="mt-2">Designed by Monowar + Nuri</p>
+      </footer>
+    </div>
+  );
+}
